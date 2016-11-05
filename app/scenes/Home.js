@@ -1,16 +1,22 @@
 import React, { Component } from 'react'
-import { View, StyleSheet, ScrollView, Image, TouchableOpacity } from 'react-native'
+import { View, StyleSheet, Image, TouchableOpacity } from 'react-native'
 import map from 'lodash/map'
 
 import { messageTypes } from '../const'
+import { NavigationBar } from '../components/Navigation'
+
 import registerWsHandler from '../lib/socket'
 import AppText from '../components/AppText'
 import VisitorDetail from '../scenes/VisitorDetail'
+import FontIcon from '../components/FontIcon'
+import callApi from '../lib/api'
+import { HTTP_BACKEND_URL } from '../config'
 
 const visitors = [{
   persona: {
+    hash: 'kev',
     image: require('../images/macaulay.png'),
-    fullName: 'Kevin Costner',
+    name: 'Kevin Costner',
     custom_data: {
       tshirtSize: 'M',
       shoeSize: 44,
@@ -32,8 +38,10 @@ const visitors = [{
   ]
 }, {
   persona: {
+    hash: 'chorli',
     image: require('../images/charlie.png'),
-    fullName: 'Charlie Sheen',
+    name: 'Charlie Sheen',
+    celebrity: true,
     custom_data: {}
   },
   recent_purchases: [],
@@ -43,20 +51,35 @@ const visitors = [{
 class Home extends Component {
   constructor (props) {
     super(props)
-    this.state = { visitors }
+    this.state = {
+      visitors,
+      inventory: []
+    }
   }
 
   selectVisitor (visitor) {
     this.props.navigator.push({
       component: VisitorDetail,
-      title: visitor.persona.fullName || 'New Visitor',
-      visitor
+      title: visitor.persona.name || 'New Visitor',
+      visitor,
+      inventory: this.state.inventory,
+      rightAction: NavigationBar.rightActionTypes.SHOW_CART
     })
   }
 
   componentDidMount () {
+    callApi({
+      method: 'GET',
+      path: `${HTTP_BACKEND_URL}/inventory.json`
+    })
+    .then((res) => {
+      this.setState({ inventory: res.data })
+    })
+    .catch((err) => {
+      console.log(err)
+    })
+
     registerWsHandler((msg) => {
-      console.log('message type', typeof message)
       if (msg.indexOf('{') >= 0) {
         const message = JSON.parse(msg)
         switch (message.type) {
@@ -73,7 +96,6 @@ class Home extends Component {
       } else {
         console.log('invalid message', msg)
       }
-
     })
   }
 
@@ -98,12 +120,23 @@ class Home extends Component {
                     <Image
                       style={styles.avatarImage}
                       source={avatarSource} />
-                    <View style={styles.fixCircleClipping} />
+                    {visitor.persona.celebrity
+                    ? (
+                      <FontIcon
+                        icon='star'
+                        size={36}
+                        color='#af783f'
+                        style={{
+                          position: 'absolute',
+                          top: 0,
+                          left: 0
+                        }} />
+                    ) : null}
                   </View>
                   <AppText
                     numberOfLines={1}
                     style={{ textAlign: 'center', paddingVertical: 8 }}>
-                    {visitor.persona.fullName || 'New Visitor'}
+                    {visitor.persona.name || 'New Visitor'}
                   </AppText>
                 </View>
               </TouchableOpacity>

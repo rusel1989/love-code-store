@@ -10,16 +10,40 @@ class ArticleList extends Component {
     return <AppText type='subheading'>{formatPrice(price)}</AppText>
   }
 
+  getSecondaryLabel (item) {
+    const parts = [
+      item.category
+    ]
+    if (this.props.purchased) {
+      parts.push(`Purchased at ${formatDate(item.purchased_at)}`)
+    }
+    if (this.props.recommended) {
+      parts.push(`Based on your Age`)
+    }
+    return parts.join(' | ')
+  }
+
   render () {
     return (
       <View style={{ flex: 1 }}>
-        <ScrollView style={{ flex: 1 }}>
+        <ScrollView style={{ flex: 1 }} contentContainerStyle={{ paddingVertical: 8 }}>
           {this.props.items.map((item) => {
+            const leftItem = (
+              <Image
+                source={{ uri: item.image }}
+                style={{
+                  width: 40,
+                  height: 40,
+                  resizeMode: 'cover',
+                  borderRadius: 20
+                }} />
+            )
             return (
               <ListItem
                 bottomBorderAndroid
-                leftItem={<Image source={{ uri: item.image }} style={{ width: 40, height: 40, resizeMode: 'cover', borderRadius: 20 }} />}
-                secondaryLabel={`Purchased at ${formatDate(item.purchased_at)}`}
+                onPress={() => this.props.onPress(item)}
+                leftItem={leftItem}
+                secondaryLabel={this.getSecondaryLabel(item)}
                 label={item.name}
                 rightItem={this.renderPrice(item.price)} />
             )

@@ -5,7 +5,7 @@ import glyphMap from '@n/const/icon-glyph-map'
 class FontIcon extends Component {
   render () {
     const style = {
-      fontFamily: Platform.OS === 'ios' ? 'Material Icons' : 'materialicons',
+      fontFamily: Platform.OS === 'ios' ? 'Material Icons' : 'MaterialIcons',
       color: this.props.color,
       fontSize: this.props.size
     }
@@ -14,7 +14,7 @@ class FontIcon extends Component {
       glyph = String.fromCharCode(glyph)
     }
     return (
-      <Text style={style}>
+      <Text style={[style, this.props.style]}>
         {glyph}
       </Text>
     )

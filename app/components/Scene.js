@@ -17,7 +17,7 @@ class Scene extends Component {
   }
 
   render () {
-    const { route, navigator, config, printer } = this.props
+    const { route } = this.props
     const RouteHandler = route.component
     const scenePadding = route.hideNavbar ? 0 : Platform.OS === 'ios' ? 64 : 56
     return (
@@ -28,11 +28,7 @@ class Scene extends Component {
         paddingTop: scenePadding,
         paddingBottom: Platform.OS === 'ios' ? this.state.keyboardHeight : 0
       }}>
-        <RouteHandler
-          navigator={navigator}
-          route={route}
-          config={config}
-          printer={printer} />
+        <RouteHandler {...this.props} />
         <KeyboardSpacer
           style={{ backgroundColor: '#000' }}
           onToggle={(isOpened, keyboardHeight) => {

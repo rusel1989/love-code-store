@@ -4,6 +4,7 @@ import keyMirror from 'key-mirror'
 
 import colors from '../../const/colors'
 import FontIcon from '../FontIcon'
+import AppText from '../AppText'
 //import iosBackButton from '@n/images/ios_back_button.png'
 
 const navbarMargin = Platform.OS === 'ios' ? 20 : 0
@@ -13,13 +14,19 @@ const leftActionTypes = keyMirror({
   NONE: null
 })
 
+const rightActionTypes = keyMirror({
+  SHOW_CART: null,
+})
+
 class NavigationBar extends Component {
   constructor (props) {
     super(props)
     this.actions = {
       [leftActionTypes.GO_BACK]: this.renderBackButton.bind(this),
       [leftActionTypes.SHOW_MENU]: this.renderMenuButton.bind(this),
-      [leftActionTypes.NONE]: () => null
+      [leftActionTypes.NONE]: () => null,
+      [rightActionTypes.SHOW_CART]: this.renderShowCartButton.bind(this)
+
     }
   }
 
@@ -32,7 +39,7 @@ class NavigationBar extends Component {
     return (
       <TouchableOpacity
         onPress={() => navigator.pop()}
-        style={styles.navbarButton}>
+        style={[styles.navbarButton, { left: 16 }]}>
         {Platform.OS === 'ios'
         ? (
           <Image source={iosBackButton} style={{ width: 12.5, height: 21 }} />
@@ -43,11 +50,33 @@ class NavigationBar extends Component {
     )
   }
 
+  getCartItemsCount () {
+    return this.props.cart.items.filter((item) => item.personaHash === this.props.route.visitor.persona.hash).length
+  }
+
+  renderShowCartButton () {
+    return (
+      <View style={{ flexDirection: 'row', justifyContent: 'center' }}>
+        <AppText type='subheading'>
+          {this.getCartItemsCount()}
+        </AppText>
+        <View>
+          <FontIcon.Button
+            buttonStyle={{ paddingRight: 16, paddingLeft: 8, alignItems: 'flex-end' }}
+            size={24}
+            icon='shopping_cart'
+            color={colors.LIGHT_COLOR}
+            onPress={() => {}}/>
+        </View>
+      </View>
+    )
+  }
+
   renderMenuButton () {
     return (
       <TouchableOpacity
         onPress={this.props.onMenuPress}
-        style={styles.navbarButton}>
+        style={[styles.navbarButton, { left: 16 }]}>
         <FontIcon icon='menu' color='#fff' size={24} />
       </TouchableOpacity>
     )
@@ -61,7 +90,6 @@ class NavigationBar extends Component {
     const { route, navigator } = this.props
     const defaultLeftAction = leftActionTypes.GO_BACK
     const { title = '', leftAction = defaultLeftAction, hideNavbar, rightAction } = route
-    const rightActionData = typeof rightAction === 'function' ? rightAction(route, navigator) : null
     const bgColor = this.isHome() ? colors.SECONDARY_COLOR : colors.PRIMARY_COLOR
     if (hideNavbar) {
       return null
@@ -73,13 +101,8 @@ class NavigationBar extends Component {
         <Text style={styles.title}>
           {title}
         </Text>
-        {this.actions[leftAction]()}
-        {rightActionData
-        ? (
-          <TouchableOpacity style={styles.rightItem} onPress={rightActionData.onPress}>
-            <Text style={styles.rightItemText}>{rightActionData.label}</Text>
-          </TouchableOpacity>
-        ) : null }
+        {this.actions[leftAction] && this.actions[leftAction]()}
+        {this.actions[rightAction] && this.actions[rightAction]()}
       </View>
     )
   }
@@ -96,6 +119,7 @@ class NavigationBar extends Component {
 }
 
 NavigationBar.leftActionTypes = leftActionTypes
+NavigationBar.rightActionTypes = rightActionTypes
 
 const styles = StyleSheet.create({
   navbar: {
@@ -119,12 +143,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     ...Platform.select({
       ios: {
-        left: 7.5,
         height: 44,
         width: 44
       },
       android: {
-        left: 16,
         height: 56,
         width: 56
       }

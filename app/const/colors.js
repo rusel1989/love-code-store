@@ -15,5 +15,6 @@ export default {
   LIGHT_COLOR: '#FFFFFF',
   GREY_LIGHT: '#DFDFDF',
   GREY_MEDIUM: '#808080',
-  GREY_DARK: '#363645'
+  GREY_DARK: '#363645',
+  GOLD: '#af783f'
 }

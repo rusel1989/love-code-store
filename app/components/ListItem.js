@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react'
-import { StyleSheet, View, TouchableHighlight, Platform } from 'react-native'
+import { StyleSheet, View, TouchableOpacity, Platform } from 'react-native'
 
 import colors from '@n/const/colors'
 import AppText from './AppText'
@@ -18,9 +18,9 @@ class ListItem extends Component {
     } : null
 
     return (
-      <TouchableHighlight
+      <TouchableOpacity
         onPress={onPress}
-        underlayColor={colors.GREY_LIGHT}
+        activeOpacity={0.75}
         style={[styles.container, style]}>
         <View style={[ styles.innerContainer, style, leftPadding ]}>
           {leftItem
@@ -39,7 +39,7 @@ class ListItem extends Component {
               ) : this.props.children}
               {secondaryLabel
               ? (
-                <AppText type='caption' style={{ color: '#aaa'}}>
+                <AppText type='caption' style={{ color: '#aaa' }}>
                   {secondaryLabel}
                 </AppText>
               ) : null}
@@ -54,7 +54,7 @@ class ListItem extends Component {
             ) : null}
           </View>
         </View>
-      </TouchableHighlight>
+      </TouchableOpacity>
     )
   }
 
@@ -73,7 +73,7 @@ class ListItem extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: colors.BACKGROUND_COLOR,
+    //backgroundColor: colors.BACKGROUND_COLOR,
     ...Platform.select({
       ios: {
         height: 44.5

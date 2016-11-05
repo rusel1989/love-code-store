@@ -20,7 +20,11 @@ class App extends Component {
     super(props, context)
     this.state = {
       route: INITIAL_ROUTE,
-      isMenuOpen: false
+      isMenuOpen: false,
+      cart: {
+        items: [],
+        count: 0
+      }
     }
   }
 
@@ -50,8 +54,11 @@ class App extends Component {
   }
 
   renderScene (route, navigator) {
+    console.log('app cart', this.state.cart)
     return (
       <Scene
+        updateCart={(cart) => this.setState({ cart })}
+        cart={this.state.cart}
         route={route}
         navigator={navigator} />
     )
@@ -94,10 +101,10 @@ class App extends Component {
   }
 
   render () {
-    console.log(this.state.route)
     const navBar = (
       <NavigationBar
         route={this.state.route}
+        cart={this.state.cart}
         onMenuPress={() => this.handleMenuPress()} />
     )
     const menu = (

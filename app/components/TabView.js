@@ -12,7 +12,7 @@ class TabView extends Component {
         style={this.props.style}
         tabBarBackgroundColor={colors.PRIMARY_COLOR}
         underlineStyle={{ backgroundColor: '#fff' }}
-        tabBarActiveTextColor={colors.LIGHT_COLOR}
+        tabBarActiveTextColor={'#af783f'}
         tabBarInactiveTextColor={colors.PRIMARY_COLOR_LIGHTER}
         onChangeTab={this.props.onChange}>
         {this.props.children}
