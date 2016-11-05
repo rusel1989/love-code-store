@@ -2,10 +2,14 @@ import React, { Component } from 'react'
 
 import { View, Image, ScrollView, StyleSheet } from 'react-native'
 
+import AppText from '../components/AppText'
 import TabView from '../components/TabView'
 import TextInput from '../components/TextInput'
-import List from '../components/List'
-import ListItem from '../components/ListItem'
+import ArticleList from '../components/ArticleList'
+import FontIcon from '../components/FontIcon'
+
+import callApi from '../lib/api'
+import { formatPrice, formatDate } from '../lib/utils'
 
 class VisitorDetail extends Component {
   constructor (props) {
@@ -17,55 +21,90 @@ class VisitorDetail extends Component {
   }
 
   getChangeHandler (prop) {
-    return (val) => this.setState({ visitor: { ...this.state.visitor, [prop]: val } })
+    return (val) => this.setState({
+      visitor: {
+        ...this.state.visitor,
+        persona: {
+          ...this.state.visitor.persona,
+          [prop]: val
+        }
+      }
+    })
+  }
+
+  getCustomDataChangeHandler (prop) {
+    return (val) => this.setState({
+      visitor: {
+        ...this.state.visitor,
+        persona: {
+          ...this.state.visitor.persona,
+          custom_data: {
+            ...this.state.visitor.persona.custom_data,
+            [prop]: val
+          }
+        }
+      }
+    })
+  }
+
+  renderPrice (price) {
+    return <AppText type='subheading'>{formatPrice(price)}</AppText>
+  }
+
+  savePersona () {
+    console.log('save persona', this.state.visitor.persona)
+    callApi({
+      method: 'POST',
+      path: 'https://lovecode-store.herokuapp.com/persona/checkout/pupca',
+      payload: {
+        persona: this.state.visitor.persona
+      }
+    })
   }
 
   render () {
     const { visitor } = this.state
+    const avatarSource = typeof visitor.persona.image === 'string'
+    ? { uri: visitor.persona.image }
+    : visitor.persona.image
     return (
       <View style={{ flex: 1 }}>
         <View style={{ flexDirection: 'row', justifyContent: 'center', padding: 16 }}>
-          <View style={{ flex: 0.3 }}>
+          <View style={{ flex: 0.5, justifyContent: 'center', alignItems: 'center' }}>
             <View style={styles.avatar}>
-              <Image source={visitor.avatar} style={styles.avatarImage} />
+              <Image source={avatarSource} style={styles.avatarImage} />
             </View>
-          </View>
-          <View style={{ flex: 0.7 }}>
             <TextInput
-              label='Full Name'
-              value={visitor.fullName}
+              width={240}
+              valueAlign='center'
+              value={visitor.persona.fullName}
               onChangeText={this.getChangeHandler('fullName')} />
+          </View>
+          <View style={{ flex: 0.5 }}>
             <TextInput
-              label='Size'
-              value={visitor.size}
-              onChangeText={this.getChangeHandler('size')} />
+              label='T-Shirt Size'
+              value={visitor.persona.custom_data.tshirtSize}
+              onChangeText={this.getCustomDataChangeHandler('tshirtSize')} />
+            <TextInput
+              label='Waist Size'
+              value={visitor.persona.custom_data.waistSize}
+              onChangeText={this.getCustomDataChangeHandler('waistSize')} />
             <TextInput
               label='Shoe Size'
-              value={visitor.shoeSize}
-              onChangeText={this.getChangeHandler('shoeSize')} />
+              value={visitor.persona.custom_data.shoeSize}
+              onChangeText={this.getCustomDataChangeHandler('shoeSize')} />
           </View>
         </View>
         <TabView initialPage={0}>
-          <View tabLabel="Recent" key={0}>
-            <List>
-              {visitor.recent_purchases.map((purchase) => {
-                return (
-                  <ListItem />
-                )
-              })}
-            </List>
-          </View>
-          <View tabLabel="Recommended" key={1}>
-            <List>
-              {visitor.recommendation.map((recommendation) => {
-                return (
-                  <ListItem
-                    label={recommendation.name}
-                    rightItem={recommendation.price} />
-                )
-              })}
-            </List>
-          </View>
+          <ArticleList
+            tabLabel='Recent'
+            items={visitor.recent_purchases} />
+          <ArticleList
+            tabLabel='Recommended'
+            items={visitor.recommendation} />
+          <ArticleList
+            tabLabel='Inventory'
+            items={[]} />
         </TabView>
       </View>
     )
@@ -78,13 +117,15 @@ const styles = StyleSheet.create({
     width: 120,
     borderRadius: 60,
     borderWidth: 2,
-    borderColor: '#af783f'
+    borderColor: '#af783f',
+    marginBottom: 10
   },
   avatarImage: {
     width: null,
     height: null,
     flex: 1,
-    resizeMode: 'contain'
+    resizeMode: 'cover',
+    borderRadius: 60
   }
 })
 

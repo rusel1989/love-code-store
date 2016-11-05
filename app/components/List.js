@@ -36,8 +36,8 @@ const styles = StyleSheet.create({
       },
       android: {
         paddingBottom: 8,
-        borderBottomWidth: 0.5,
-        borderColor: colors.GREY_LIGHT
+        borderBottomWidth: 1,
+        borderColor: colors.PRIMARY_COLOR
       }
     })
   },

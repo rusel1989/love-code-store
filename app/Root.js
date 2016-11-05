@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 
-import './lib/socket'
 import App from './App'
 
 console.disableYellowBox = true

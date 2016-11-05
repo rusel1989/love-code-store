@@ -11,7 +11,7 @@ class TabView extends Component {
         tabBarPosition={this.props.tabBarPosition}
         style={this.props.style}
         tabBarBackgroundColor={colors.PRIMARY_COLOR}
-        tabBarUnderlineColor={colors.SECONDARY_COLOR}
+        underlineStyle={{ backgroundColor: '#fff' }}
         tabBarActiveTextColor={colors.LIGHT_COLOR}
         tabBarInactiveTextColor={colors.PRIMARY_COLOR_LIGHTER}
         onChangeTab={this.props.onChange}>

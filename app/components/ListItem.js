@@ -8,13 +8,13 @@ const PLATFORM_PADDING = Platform.OS === 'ios' ? 15 : 16
 
 class ListItem extends Component {
   render () {
-    const { leftItem, rightItem, style, onPress, label, lastItem } = this.props
+    const { leftItem, rightItem, style, onPress, label, secondaryLabel, lastItem } = this.props
     const bottomBorder = lastItem ? { borderBottomWidth: 0 } : {}
     const leftPadding = !leftItem ? { paddingLeft: PLATFORM_PADDING } : {}
     const androidBorder = Platform.OS === 'android' && this.props.bottomBorderAndroid && !lastItem
     ? {
-      borderColor: colors.GREY_LIGHT,
-      borderBottomWidth: 0.5
+      borderColor: colors.PRIMARY_COLOR,
+      borderBottomWidth: 1
     } : null
 
     return (
@@ -30,12 +30,20 @@ class ListItem extends Component {
             </View>
           ) : null}
           <View style={[ styles.labelContainer, bottomBorder, androidBorder ]}>
-            {label
-            ? (
-              <AppText type='subheading'>
-                {label}
-              </AppText>
-            ) : this.props.children}
+            <View>
+              {label
+              ? (
+                <AppText type='subheading'>
+                  {label}
+                </AppText>
+              ) : this.props.children}
+              {secondaryLabel
+              ? (
+                <AppText type='caption' style={{ color: '#aaa'}}>
+                  {secondaryLabel}
+                </AppText>
+              ) : null}
+            </View>
             {rightItem
             ? (
               <View style={[styles.sideItem, styles.rightItem]}>
@@ -65,13 +73,13 @@ class ListItem extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: colors.LIGHT_COLOR,
+    backgroundColor: colors.BACKGROUND_COLOR,
     ...Platform.select({
       ios: {
         height: 44.5
       },
       android: {
-        height: 48
+        height: 72
       }
     })
   },
@@ -86,7 +94,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     ...Platform.select({
       ios: {
-        borderColor: colors.GREY_LIGHT,
+        borderColor: colors.PRIMARY_COLOR,
         borderBottomWidth: 0.5
       },
       android: {}
