@@ -1,0 +1,1157 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"border",
+				"borderRadius"
+			],
+			[
+				"fina",
+				"finalPolozky"
+			],
+			[
+				"pol",
+				"polozka"
+			],
+			[
+				"poloz",
+				"polozkyMaxi"
+			],
+			[
+				"plozky",
+				"polozkyMaxi"
+			],
+			[
+				"EE",
+				"EET_STATUS_FILTER"
+			],
+			[
+				"filter",
+				"filterType"
+			],
+			[
+				"eet",
+				"eetType"
+			],
+			[
+				"submitte",
+				"submittedWithoutEet"
+			],
+			[
+				"refund",
+				"refundedTransaction"
+			],
+			[
+				"rece",
+				"receiptSettings"
+			],
+			[
+				"is",
+				"isMeasuredByPiece"
+			],
+			[
+				"tra",
+				"transactionStates"
+			],
+			[
+				"print",
+				"printRefund"
+			],
+			[
+				"get",
+				"getReceiptText"
+			],
+			[
+				"receipt",
+				"receiptSettings"
+			],
+			[
+				"take",
+				"takeSnapshotAndSend"
+			],
+			[
+				"in",
+				"initialValue"
+			],
+			[
+				"ex",
+				"expandCategory"
+			],
+			[
+				"_e",
+				"_setMaxHeight"
+			],
+			[
+				"expa",
+				"expandedCategory"
+			],
+			[
+				"render",
+				"renderRightItem"
+			],
+			[
+				"ec",
+				"expandedCategory"
+			],
+			[
+				"expan",
+				"expandCategory"
+			],
+			[
+				"row",
+				"rowData"
+			],
+			[
+				"sele",
+				"selectTextOnFocus"
+			],
+			[
+				"back",
+				"backgroundColor"
+			],
+			[
+				"se",
+				"sendRevenue"
+			],
+			[
+				"err",
+				"error"
+			],
+			[
+				"req",
+				"requestOptions"
+			],
+			[
+				"show",
+				"showLongBottom"
+			],
+			[
+				"rcc",
+				"rcc\tReact: legacy component"
+			],
+			[
+				"venue",
+				"venueId"
+			],
+			[
+				"pa",
+				"paddingVertical"
+			],
+			[
+				"avata",
+				"avatarWrapper"
+			],
+			[
+				"NA",
+				"NavigationBar"
+			],
+			[
+				"hand",
+				"handleMenuItemPress"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"sty",
+				"styles"
+			],
+			[
+				"flex",
+				"flexDirection"
+			],
+			[
+				"si",
+				"signedMessage"
+			],
+			[
+				"acti",
+				"activePaymentType"
+			],
+			[
+				"payme",
+				"paymentType"
+			],
+			[
+				"ac",
+				"activePaymentType"
+			],
+			[
+				"payment",
+				"paymentType"
+			],
+			[
+				"Refun",
+				"RefundConfigurator"
+			],
+			[
+				"prop",
+				"propTypes\tpropTypes"
+			],
+			[
+				"onChange",
+				"onChangeTab"
+			],
+			[
+				"defau",
+				"defaultProps\tdefaultProps()"
+			],
+			[
+				"format",
+				"formatDatetime"
+			],
+			[
+				"load",
+				"loadActivationCode"
+			],
+			[
+				"activa",
+				"activationCode"
+			],
+			[
+				"pla",
+				"playgroundMode"
+			],
+			[
+				"sec",
+				"secData"
+			],
+			[
+				"pre",
+				"prepareEetRequest"
+			],
+			[
+				"priva",
+				"privateKeyPath"
+			],
+			[
+				"privKey",
+				"privateKeyPath"
+			],
+			[
+				"private",
+				"privateKeyPath"
+			],
+			[
+				"piva",
+				"privateKey"
+			],
+			[
+				"mess",
+				"messageBodyData"
+			],
+			[
+				"s",
+				"signedMessage"
+			],
+			[
+				"but",
+				"buttonStyle"
+			],
+			[
+				"butto",
+				"buttonStyle"
+			],
+			[
+				"padding",
+				"paddingHorizontal"
+			],
+			[
+				"S",
+				"SideMenu"
+			],
+			[
+				"sce",
+				"scene"
+			],
+			[
+				"push",
+				"pushScene"
+			],
+			[
+				"users",
+				"usersAndEstabilishments"
+			],
+			[
+				"Se",
+				"SettingsSection"
+			],
+			[
+				"Acc",
+				"Accounts"
+			],
+			[
+				"re",
+				"resultPanel"
+			],
+			[
+				"curre",
+				"currencySymbol"
+			],
+			[
+				"pr",
+				"printRefund"
+			],
+			[
+				"pri",
+				"printCopy"
+			],
+			[
+				"C",
+				"CLOSING"
+			],
+			[
+				"set",
+				"setState"
+			],
+			[
+				"P",
+				"ProgressOverlay"
+			],
+			[
+				"selec",
+				"selectFile"
+			],
+			[
+				"ce",
+				"certPath"
+			],
+			[
+				"String",
+				"StringWriter"
+			],
+			[
+				"ee",
+				"eetResponse"
+			],
+			[
+				"has",
+				"hasEetResponse"
+			],
+			[
+				"res",
+				"responseData"
+			],
+			[
+				"x50",
+				"x509cert"
+			],
+			[
+				"date",
+				"dateString"
+			],
+			[
+				"tax",
+				"taxValues"
+			],
+			[
+				"x5",
+				"x509cert"
+			],
+			[
+				"cer",
+				"certPassword"
+			],
+			[
+				"import",
+				"importCertificate"
+			],
+			[
+				"impo",
+				"importCertificate"
+			],
+			[
+				"Nat",
+				"NativeUtils"
+			],
+			[
+				"message",
+				"messageHeader"
+			],
+			[
+				"text",
+				"Text"
+			],
+			[
+				"and",
+				"android_play"
+			],
+			[
+				"List",
+				"ListItem"
+			],
+			[
+				"tex",
+				"textColor"
+			],
+			[
+				"NS",
+				"NSString"
+			],
+			[
+				"state",
+				"stateString"
+			],
+			[
+				"event",
+				"eventName"
+			],
+			[
+				"inten",
+				"intent"
+			],
+			[
+				"en",
+				"enableInfoWrapper"
+			],
+			[
+				"reac",
+				"reactContext"
+			],
+			[
+				"RCT",
+				"RCTToastPackage"
+			],
+			[
+				"blue",
+				"bluetoothAdapter"
+			],
+			[
+				"longi",
+				"longitudeDelta"
+			],
+			[
+				"map",
+				"mapSnapshot"
+			],
+			[
+				"initi",
+				"initialRegion"
+			],
+			[
+				"pac",
+				"packetSize"
+			],
+			[
+				"Event",
+				"EventEmitter"
+			],
+			[
+				"Blue",
+				"BluetoothSerial"
+			],
+			[
+				"connec",
+				"connecting"
+			],
+			[
+				"conn",
+				"connectionInfoWrapper"
+			],
+			[
+				"de",
+				"deviceIds"
+			],
+			[
+				"d",
+				"discovering"
+			],
+			[
+				"margin",
+				"marginVertical"
+			],
+			[
+				"fon",
+				"fontSize"
+			],
+			[
+				"al",
+				"alignSelf"
+			],
+			[
+				"write",
+				"writePromises"
+			],
+			[
+				"to",
+				"toWrite"
+			],
+			[
+				"sy",
+				"synchronized"
+			],
+			[
+				"read",
+				"readUntil"
+			],
+			[
+				"B",
+				"BluetoothSerialExample"
+			],
+			[
+				"video",
+				"videoPoints"
+			],
+			[
+				"p",
+				"photoPoints"
+			],
+			[
+				"sort",
+				"sortByTime"
+			],
+			[
+				"fiel",
+				"filename"
+			],
+			[
+				"vide",
+				"videoPath"
+			],
+			[
+				"c",
+				"config.json"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.ios.js",
+			"settings":
+			{
+				"buffer_size": 1069,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "lis",
+		"selected_items":
+		[
+			[
+				"lis",
+				"Package Control: List Packages"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"GitGutter: Compare Against Branch"
+			],
+			[
+				"Cof",
+				"Coffee: Check Syntax"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"coffee",
+				"Coffee: Check Syntax"
+			],
+			[
+				"list ",
+				"Package Control: List Packages"
+			],
+			[
+				"su",
+				"SublimeLinter: Choose Gutter Theme"
+			]
+		],
+		"width": 602.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/rusel/projects/RetailApp"
+	],
+	"file_history":
+	[
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/components/Navigation/MenuContent.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/store/initial-state.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/scenes/sale/PaymentOptions.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/locales/cs.json",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/actions/closings.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/actions/sale.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/lib/closings.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/scenes/reports/Closings.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/scenes/Pricing.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/components/PricingPlan.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/lib/eet/index.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/node_modules/react-native/Libraries/Network/XMLHttpRequest.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/scenes/sale/FinishSale.js",
+		"/Users/rusel/projects/maxipokladna/risa.json",
+		"/Users/rusel/projects/maxipokladna/sekce.json",
+		"/Users/rusel/projects/maxipokladna/parse-r.js",
+		"/Users/rusel/projects/maxipokladna/plozky-maxi.json",
+		"/Users/rusel/projects/maxipokladna/sekce-maxi.json",
+		"/Users/rusel/projects/maxipokladna/nazvy-sekci.json",
+		"/Users/rusel/projects/maxipokladna/polozky.json",
+		"/private/var/folders/td/ptp8dpb946x35rtfxc656w340000gn/T/fz3temp-1/file-1478037486027",
+		"/Users/rusel/projects/maxipokladna/file-1478037486027",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/local.properties",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/components/AppText.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/scenes/sale/OpenedReceipts.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/scenes/reports/Transactions.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/scenes/reports/EetTransactions.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/const/index.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/components/PickerTrigger/index.android.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/components/TextInput.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/components/TransactionList.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/scenes/assortment/EditArticle.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/locales/zh.json",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/locales/vi.json",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/locales/en.json",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/locales/de.json",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/scenes/Home.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/lib/printer/jobs/printjob.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/lib/printer/jobs/receipt.js",
+		"/Users/rusel/Downloads/receipt-0-1477876244715.txt",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/scenes/settings/Overview.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/package.json",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/android/app/build.gradle",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/android/app/src/main/java/com/ipokladna/MainApplication.java",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/android/app/src/main/java/com/ipokladna/MaxipokladnaUtilsModule.java",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/scenes/settings/Eet.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/node_modules/react-native-mail/android/src/main/java/com/chirag/RNMail/RNMailModule.java",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/scenes/assortment/Overview.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/components/Receipt.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/android/app/src/main/AndroidManifest.xml",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/scenes/reports/TransactionDetail.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/lib/send-receipt.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/lib/api.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/components/ProductList.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/components/Calculator/lib/styles.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/components/SaleConfigurator.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/scenes/reports/ClosingDetail.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/scenes/sale/QuickSale.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/node_modules/react-native-action-button/ActionButtonItem.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/node_modules/react-native-action-button/package.json",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/node_modules/react-native-action-button/ActionButton.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/scenes/sale/Sale.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/scenes.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/lib/eet/const.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/scenes/settings/Receipt.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/node_modules/whatwg-fetch/fetch.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/node_modules/event-target-shim/lib/event-target.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/node_modules/react-native/Libraries/ReactIOS/YellowBox.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/components/Navigation/BottomNavigationBar.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/components/RefundConfigurator.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/scenes/sale/Refund.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/components/Button.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/lib/eet/templates.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/components/Calculator/lib/ButtonPanel.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/const/colors.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/components/Navigation/NavigationBar.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/components/Navigation/MenuHeader.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/components/PickerTrigger/index.ios.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/components/Navigation/Menu.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/components/Navigation/index.android.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/components/Navigation/index.ios.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/App.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/components/Scene.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/components/NavigationBar.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/components/Menu.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/components/Navigation.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/node_modules/react-native-scrollable-tab-view/DefaultTabBar.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/components/TabView.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/node_modules/react-native-scrollable-tab-view/index.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/Root.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/components/BarcodeScanner/index.android.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/scenes/new-user/Activate.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/components/BarcodeScanner/index.ios.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/components/BarcodeScanner",
+		"/Users/rusel/projects/maxipokladna/maxipokladna-backend/server.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna-backend/model/account.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna-backend/model/user.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna-backend/routes/index.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/scenes/new-user/Login.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna-backend/auth/authenticate.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/lib/utils.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/lib/printer/jobs/closing.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/reducers/receipt.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/components/CategoryList.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/scenes/settings/Backup.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/scenes/new-user/Register.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/node_modules/randombytes/browser.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/node_modules/browserify-sign/sign.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/node_modules/react-native-xml-crypto/lib/signed-xml.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/node_modules/react-native-randombytes/index.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/android/build.gradle",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/components/SideMenu.android.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/components/SideMenu.ios.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/components/ListItem.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/lib/eet/utils.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/scenes/settings/Account.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/scenes/settings/Accounts.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/scenes/settings/Users.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/android/gradlew",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/lib/printer/driver/commands.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/components/Calculator/lib/ResultPanel.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/components/Calculator/lib/Calculator.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/components/Calculator/index.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/lib/printer/jobs/test.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/lib/printer/driver/print.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/lib/printer/index.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/scenes/settings/Printer.js",
+		"/Users/rusel/projects/maxipokladna/maxipokladna/src/lib/printer/jobs/code-pages.js"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/rusel/projects/maxipokladna/maxipokladna/src, -/Users/rusel/projects/maxipokladna/maxipokladna/node_modules, -*.js.map, -.cache/*",
+			"/Users/rusel/projects/maxipokladna/maxipokladna/src, -/Users/rusel/projects/maxipokladna/maxipokladna/node_modules, -*.js.map",
+			"/Users/rusel/projects/maxipokladna/maxipokladna/src, -/Users/rusel/projects/maxipokladna/maxipokladna/node_modules",
+			"/Users/rusel/projects/maxipokladna/maxipokladna, -/Users/rusel/projects/maxipokladna/maxipokladna/node_modules",
+			"/Users/rusel/projects/aascr/hejtman-api",
+			"/Users/rusel/projects/aascr/hejtman-api, -/Users/rusel/projects/aascr/hejtman-api/node_modules/*",
+			"/Users/rusel/projects/aascr/hejtman-api, -/Users/rusel/projects/aascr/hejtman-api/node_modules",
+			"/Users/rusel/projects/social-bakers/payment-gateway ,-*.js, -*.map, -/Users/rusel/projects/social-bakers/payment-gateway/node_modules",
+			"/Users/rusel/projects/social-bakers/analytics-frontend ,-*.js, -*.map, -/Users/rusel/projects/social-bakers/payment-gateway/node_modules",
+			"/Users/rusel/projects/social-bakers/payment-gateway ,-*.js, -*.map, -/Users/rusel/projects/social-bakers/payment-gateway/node_modules",
+			"/Users/rusel/projects/social-bakers/analytics-frontend ,-*.js, -*.map, -/Users/rusel/projects/social-bakers/payment-gateway/node_modules",
+			"/Users/rusel/projects/social-bakers/payment-gateway ,-*.js, -*.map, -/Users/rusel/projects/social-bakers/payment-gateway/node_modules",
+			"/Users/rusel/projects/social-bakers/payment-gateway ,-*.js, -*.map",
+			"/Users/rusel/projects/social-bakers/payment-gateway/frontend ,-*.js, -*.map",
+			"/Users/rusel/projects/social-bakers/analytics-backend/ ,-*.js, -*.map",
+			"/Users/rusel/projects/social-bakers/analytics-frontend/client/app/ ,-*.js, -*.map",
+			"/Users/rusel/projects/social-bakers/analytics-frontend ,-*.js, -*.map",
+			"/Users/rusel/projects/social-bakers/payment-gateway ,-*.js, -*.map",
+			"/Users/rusel/projects/social-bakers/analytics-frontend ,-*.js, -*.map",
+			"/Users/rusel/projects/social-bakers/analytics-frontend ",
+			"/Users/rusel/projects/social-bakers/analytics-frontend -*.js -*.map",
+			"/Users/rusel/projects/social-bakers/payment-gateway",
+			"/Users/rusel/projects/social-bakers/analytics-frontend ,-*.js, -*.map",
+			"/Users/rusel/projects/social-bakers/analytics-frontend ,-*.js",
+			"/Users/rusel/projects/social-bakers/analytics-frontend",
+			"/Users/rusel/projects/social-bakers/payment-gateway",
+			"/Users/rusel/projects/social-bakers/analytics-frontend",
+			"/Users/rusel/projects/social-bakers/analytics-backend",
+			"/Users/rusel/projects/social-bakers/analytics-frontend",
+			"/Users/rusel/projects/social-bakers/analytics-backend ",
+			"/Users/rusel/projects/social-bakers/analytics-frontend ,-*/Users/rusel/projects/social-bakers/payment-gateway/node_modules/*",
+			"/Users/rusel/projects/social-bakers/payment-gateway/frontend/src ,-*/Users/rusel/projects/social-bakers/payment-gateway/node_modules/*",
+			"/Users/rusel/projects/social-bakers/payment-gateway ,-*/Users/rusel/projects/social-bakers/payment-gateway/node_modules/*",
+			"payment-gateway ,-*payment-gateway/node_modules/*",
+			"payment-gateway ,-payment-gateway/node_modules/*",
+			"payment-gateway ,-payment-gateway/node_modules",
+			"/Users/rusel/projects/social-bakers/payment-gateway ,-/Users/rusel/projects/social-bakers/payment-gateway/node_modules",
+			"/Users/rusel/projects/social-bakers/payment-gateway ,/Users/rusel/projects/social-bakers/payment-gateway/node_modules",
+			"/Users/rusel/projects/social-bakers/payment-gateway",
+			"/Users/rusel/projects/social-bakers/analytics-backend",
+			"/Users/rusel/projects/social-bakers/payment-gateway",
+			"/Users/rusel/projects/social-bakers/payment-gateway,-*/Users/rusel/projects/social-bakers/payment-gateway/node_modules",
+			"/Users/rusel/projects/amax/crm.amaxsro.com/src/js",
+			"/Users/rusel/projects/amax/api.amaxsro.com/",
+			"/Users/rusel/projects/amax/crm.amaxsro.com/src/js",
+			"<current file>",
+			"<current file>,/Users/rusel/projects/amax/crm.amaxsro.com/src/js",
+			"<current file>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"581906bf5482b52b5a21479a",
+			"_hasE",
+			"onerror",
+			"renderPrice",
+			"filterByPa",
+			"TransactionList",
+			"filterTransactionsByPaymentType",
+			"filterTransactionsByType",
+			"error_device_is_offline",
+			"60",
+			"newLine",
+			"totalLabel",
+			"this",
+			"this._t",
+			"path",
+			"subtotal",
+			"settings",
+			"console.log",
+			"Refund",
+			"_hasError",
+			"pay",
+			"eetMode",
+			"sendReve",
+			"article",
+			"item",
+			"./scenes/",
+			"NavigationBar",
+			"onItemSelected",
+			"this.props",
+			"menuItem",
+			"sectionTitle",
+			"aboutButton",
+			"isHome",
+			"onNavIconPress",
+			"renderNavigationView",
+			"Navigation",
+			"received",
+			"total",
+			"moment",
+			"DD.MM.YYYY",
+			"findCanon",
+			"printerSettings",
+			"iconv",
+			"commands",
+			"printer",
+			"print",
+			"printerSettings",
+			"formatPrice",
+			", { locale: 'cs' }",
+			"I18n.t",
+			", { locale: 'cs' }",
+			"I18n.t",
+			"printText",
+			"lib/printer",
+			"getReactApplicationContext",
+			"bluetoothAdapter",
+			"installDebug",
+			"base-64",
+			"console.log",
+			"key",
+			"PEM_write_PrivateKey",
+			"PEM_write_",
+			"PEM_write_X509",
+			"EVP_PKEY",
+			"tns",
+			"xsi",
+			"...",
+			"Failed to match tag",
+			"<%=",
+			"<%-",
+			"SOAP-ENV",
+			"keyInfoProvider",
+			"getKEyInfo",
+			"IPOKLADNA",
+			"sendEvent",
+			"self deleg",
+			"bleDidReceiveData",
+			"NSString",
+			"sendDe",
+			"327",
+			"cone",
+			"fs",
+			"path",
+			"assert",
+			"url.",
+			"url",
+			"emit",
+			"assert",
+			"Client\\.prototype\\.(.*) = function",
+			"events",
+			"url.",
+			"url",
+			"fs",
+			"region",
+			"this.__lastRegion",
+			"subviews",
+			"writePac",
+			"supportsStreams",
+			"notification",
+			"getAllServices",
+			"$sce",
+			"sce",
+			"vm.showImage",
+			"1459847898627",
+			"1459842658869",
+			"undefined",
+			"1459842605766",
+			"file-1459842605766",
+			"bin",
+			"mime",
+			"undefined",
+			"54d1de19ba3c300b510000cc",
+			"5519152f17f7386f5b000952",
+			"file",
+			"chunk",
+			"(chunk\\n)*",
+			"file",
+			"TypeError: app.use() requires middleware functions\n    at EventEmitter.use (/home/rusel/apps/hejtman-api/node_modules/express/lib/application.js:209:11)\n    at Object.<anonymous> (/home/rusel/apps/hejtman-api/server.js:29:5)\n    at Module._compile (module.js:413:34)\n    at Object.Module._extensions..js (module.js:422:10)\n    at Module.load (module.js:357:32)\n    at Function.Module._load (module.js:314:12)\n    at Function._load (/usr/lib/node_modules/pm2/node_modules/pmx/lib/transaction.js:62:21)\n    at Object.<anonymous> (/usr/lib/node_modules/pm2/lib/ProcessContainerFork.js:46:21)\n    at Module._compile (module.js:413:34)\n    at Object.Module._extensions..js (module.js:422:10)\n    at Module.load (module.js:357:32)\n    at Function.Module._load (module.js:314:12)\n    at Function.Module.runMain (module.js:447:10)\n    at startup (node.js:146:18)\n    at node.js:404:3\n{ [Error: ENOENT: no such file or directory, open '.env'] errno: -2, code: 'ENOENT', syscall: 'open', path: '.env' }\njs-bson: Failed to load c++ bson extension, using pure JS version",
+			"part",
+			"status",
+			"files",
+			"console.log",
+			"results[region][`${student.gender}_grade${student.grade}`]",
+			"req.user._id",
+			"creativeSchoolController",
+			"School",
+			"usersController",
+			"get"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"filterByPaymentType",
+			"filterTransactionsByPaymentType",
+			"I18n.t",
+			"@n/app/scenes/",
+			"@n/app/scenes",
+			"",
+			"this._t",
+			"",
+			"this._t",
+			"MY_APP",
+			"$1",
+			"",
+			"userId",
+			"actionSchoolController",
+			"recommendationsController",
+			"cb",
+			"'",
+			"checkAuth",
+			"",
+			"className",
+			"an.model.MyPlanStore",
+			"className=",
+			"Address",
+			"BaseView",
+			"TextInput",
+			"className=",
+			"screenStates.",
+			"",
+			"#{RECURLY_BASE}",
+			"@state.screenState",
+			"",
+			"class",
+			"plan-custom.coffee",
+			"460",
+			"business.SELF_SERVICE",
+			"recurlyService",
+			"MSG_CANCEL_SUBSCRIPTION_ERROR",
+			"TP61994_SELF_SERVED",
+			"loadingSubscription",
+			"SUBSCRIPTION_STATES",
+			"an.model.MyPlanStore.PAYMENT_METHODS",
+			"goog.global.MSG_MODULE_REQUESTED",
+			"plan-info.coffee",
+			"goog.global.MSG",
+			"payment-info.coffee",
+			"showAccountForm",
+			"$1R.",
+			"R.",
+			"r",
+			"HISTORY_DAYS",
+			"\"",
+			"'",
+			"\\t",
+			"plan_interval_length",
+			"Input",
+			"dlData",
+			"totalPrice",
+			"variableSymbol",
+			"'",
+			"categories",
+			"component",
+			"sipky.svg",
+			"sipky.png",
+			"'",
+			"$1:",
+			"client",
+			"logger"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.ios.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1069,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Oceanic Next (SL).tmTheme",
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 32.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "",
+	"project": "RetailApp.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/projects/github/github.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 265.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
