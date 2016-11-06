@@ -54,7 +54,6 @@ class App extends Component {
   }
 
   renderScene (route, navigator) {
-    console.log('app cart', this.state.cart)
     return (
       <Scene
         updateCart={(cart) => this.setState({ cart })}
@@ -100,12 +99,18 @@ class App extends Component {
     }
   }
 
+  handleCartClick (hash) {
+    let items = (this.state.cart.items || []).filter((item) => item.personaHash !== hash)
+    this.setState({ cart: {items} })
+  }
+
   render () {
     const navBar = (
       <NavigationBar
         route={this.state.route}
         cart={this.state.cart}
-        onMenuPress={() => this.handleMenuPress()} />
+        onMenuPress={() => this.handleMenuPress()}
+        onCartClick={(hash) => this.handleCartClick(hash)} />
     )
     const menu = (
       <NavigationContent

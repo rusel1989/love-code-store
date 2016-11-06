@@ -51,7 +51,7 @@ class NavigationBar extends Component {
   }
 
   getCartItemsCount () {
-    return this.props.cart.items.filter((item) => item.personaHash === this.props.route.visitor.persona.hash).length
+    return (this.props.cart.items || []).filter((item) => item.personaHash === this.props.route.visitor.persona.hash).length
   }
 
   renderShowCartButton () {
@@ -66,7 +66,8 @@ class NavigationBar extends Component {
             size={24}
             icon='shopping_cart'
             color={colors.LIGHT_COLOR}
-            onPress={() => {}}/>
+            onPress={() => this.props.onCartClick(this.props.route.visitor.persona.hash)}
+            />
         </View>
       </View>
     )

@@ -15,7 +15,6 @@ import callApi from '../lib/api'
 class VisitorDetail extends Component {
   constructor (props) {
     super(props)
-    console.log('cart', props.cart)
     this.state = {
       visitor: props.route.visitor,
       inventory: props.route.inventory
@@ -67,29 +66,34 @@ class VisitorDetail extends Component {
   }
 
   addToCart (item) {
-    item.personaHash = this.state.visitor.persona.hash
-    console.log(item)
+    item = {...item, personaHash: this.state.visitor.persona.hash}
     this.props.updateCart({
-      items: [ ...this.props.cart.items, item ],
-      count: this.props.cart.items.length + 1
+      items: [ ...this.props.cart.items, item ]
     })
   }
 
   checkout () {
-    if (!this.props.cart || !this.props.cart.count) {
-      Snackbar.show('Cart is empty', {})
+    if (!this.props.cart || !this.props.cart.items.length) {
+      Snackbar.show('Successfuly checked out', {})
+      this.props.navigator.pop()
+      this.props.route.removeVisitor(this.state.visitor.persona.hash)
     } else {
       callApi({
         method: 'POST',
         path: `${HTTP_BACKEND_URL}/persona/checkout/${this.state.visitor.persona.hash}`,
         payload: {
           persona: this.state.visitor.persona,
-          items: this.state.cart.items.map((item) => item.id)
+          items: this.props.cart.items.map((item) => item.id)
         }
       })
       .then((res) => {
         Snackbar.show('Successfuly checked out', {})
         this.props.navigator.pop()
+        // Clean cart and remove visitor
+        this.props.updateCart({
+          items: []
+        })
+        this.props.route.removeVisitor(this.state.visitor.persona.hash)
       })
       .catch((err) => {
         console.log(err)
@@ -119,7 +123,7 @@ class VisitorDetail extends Component {
     return (
       <View style={{ flex: 1 }}>
         <View style={{ flexDirection: 'row', justifyContent: 'center', padding: 16 }}>
-          <View style={{ flex: 0.5, justifyContent: 'center', alignItems: 'center' }}>
+          <View style={{ flex: 0.4, justifyContent: 'center', alignItems: 'center' }}>
             <View style={styles.avatar}>
               <Image source={avatarSource} style={styles.avatarImage} />
               {visitor.persona.celebrity
@@ -141,11 +145,21 @@ class VisitorDetail extends Component {
               value={visitor.persona.name}
               onChangeText={this.getChangeHandler('name')} />
           </View>
-          <View style={{ flex: 0.5 }}>
+          <View style={{ flex: 0.3 }}>
+            <TextInput
+              label='Age'
+              value={visitor.persona.age_min + ' - ' + visitor.persona.age_max}
+              editable={false} />
+            <TextInput
+              label='Sex'
+              value={visitor.persona.gender}
+              editable={false} />
+          </View>
+          <View style={{ flex: 0.3 }}>
             <TextInput
               label='T-Shirt Size'
-              value={visitor.persona.custom_data.tshirtSize}
-              onChangeText={this.getCustomDataChangeHandler('tshirtSize')} />
+              value={visitor.persona.custom_data.shirtSize}
+              onChangeText={this.getCustomDataChangeHandler('shirtSize')} />
             <TextInput
               label='Waist Size'
               value={visitor.persona.custom_data.waistSize}

@@ -18,7 +18,7 @@ class ArticleList extends Component {
       parts.push(`Purchased at ${formatDate(item.purchased_at)}`)
     }
     if (this.props.recommended) {
-      parts.push(`Based on your Age`)
+      parts.push(item.recommendation_text)
     }
     return parts.join(' | ')
   }
